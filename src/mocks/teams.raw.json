@@ -1,0 +1,774 @@
+{
+  "get": "teams",
+  "parameters": {
+    "search": "nap"
+  },
+  "errors": [],
+  "results": 38,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 492,
+        "name": "Napoli",
+        "code": "NAP",
+        "country": "Italy",
+        "founded": 1904,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/492.png"
+      },
+      "venue": {
+        "id": 11904,
+        "name": "Stadio Diego Armando Maradona",
+        "address": "Pizzale Vincenzo Tecchio",
+        "city": "Napoli",
+        "capacity": 60240,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/11904.png"
+      }
+    },
+    {
+      "team": {
+        "id": 2655,
+        "name": "Napredak",
+        "code": "NAP",
+        "country": "Serbia",
+        "founded": 1946,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/2655.png"
+      },
+      "venue": {
+        "id": 1422,
+        "name": "Stadion Mladost",
+        "address": "Stanka Gavrilovića bb",
+        "city": "Kruševac",
+        "capacity": 18000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1422.png"
+      }
+    },
+    {
+      "team": {
+        "id": 3409,
+        "name": "Ayia Napa",
+        "code": "AYI",
+        "country": "Cyprus",
+        "founded": 1990,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/3409.png"
+      },
+      "venue": {
+        "id": 2219,
+        "name": "Dimotiko Stadio Ayia Napa",
+        "address": null,
+        "city": "Agia Napa",
+        "capacity": 2000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/2219.png"
+      }
+    },
+    {
+      "team": {
+        "id": 5207,
+        "name": "NAPSA Stars",
+        "code": null,
+        "country": "Zambia",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/5207.png"
+      },
+      "venue": {
+        "id": 20799,
+        "name": "REIZ Arena",
+        "address": "Muyooma Primary School, Buluwe Road",
+        "city": "Lusaka",
+        "capacity": 15000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20799.png"
+      }
+    },
+    {
+      "team": {
+        "id": 5987,
+        "name": "Ways Genappe",
+        "code": null,
+        "country": "Belgium",
+        "founded": 2017,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/5987.png"
+      },
+      "venue": {
+        "id": 4455,
+        "name": "Terrein R.C.S Ways-Genappe",
+        "address": "Route du Sucre",
+        "city": "Genappe",
+        "capacity": 1000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/4455.png"
+      }
+    },
+    {
+      "team": {
+        "id": 6564,
+        "name": "Kanjanapat Group",
+        "code": null,
+        "country": "Thailand",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/6564.png"
+      },
+      "venue": {
+        "id": 8368,
+        "name": "Rajamangala University of Technology Thanyaburi Satadium",
+        "address": "Wandi Village, Rangsit",
+        "city": "Pathum Thani",
+        "capacity": 2000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/8368.png"
+      }
+    },
+    {
+      "team": {
+        "id": 6570,
+        "name": "Krua-Napat Ubon",
+        "code": null,
+        "country": "Thailand",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/6570.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 6608,
+        "name": "Suwannaphum United",
+        "code": null,
+        "country": "Thailand",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/6608.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 7820,
+        "name": "Anapolina",
+        "code": "NAP",
+        "country": "Brazil",
+        "founded": 1948,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/7820.png"
+      },
+      "venue": {
+        "id": 5655,
+        "name": "Estádio Municipal Jonas Duarte",
+        "address": "Avenida Brasil Sul",
+        "city": "Anápolis, Goiás",
+        "capacity": 17800,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/5655.png"
+      }
+    },
+    {
+      "team": {
+        "id": 7852,
+        "name": "Anápolis",
+        "code": "ANA",
+        "country": "Brazil",
+        "founded": 1946,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/7852.png"
+      },
+      "venue": {
+        "id": 5655,
+        "name": "Estádio Municipal Jonas Duarte",
+        "address": "Avenida Brasil Sul",
+        "city": "Anápolis, Goiás",
+        "capacity": 17800,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/5655.png"
+      }
+    },
+    {
+      "team": {
+        "id": 7917,
+        "name": "Napoli U19",
+        "code": "NAP",
+        "country": "Italy",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/7917.png"
+      },
+      "venue": {
+        "id": 5703,
+        "name": "Centro Sportivo Sant'Antimo",
+        "address": "Via G. Marconi, 117",
+        "city": "Sant&apos;Antimo",
+        "capacity": 2500,
+        "surface": "artificial turf",
+        "image": "https://media.api-sports.io/football/venues/5703.png"
+      }
+    },
+    {
+      "team": {
+        "id": 8059,
+        "name": "CNaPS Sport",
+        "code": null,
+        "country": "Madagascar",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/8059.png"
+      },
+      "venue": {
+        "id": 5738,
+        "name": "Stade Municipal de Toamasina",
+        "address": "Boulevard Ratsimilaho",
+        "city": "Toamasina",
+        "capacity": 2500,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/5738.png"
+      }
+    },
+    {
+      "team": {
+        "id": 8435,
+        "name": "Genappe",
+        "code": null,
+        "country": "Belgium",
+        "founded": 2017,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/8435.png"
+      },
+      "venue": {
+        "id": 4455,
+        "name": "Terrein R.C.S Ways-Genappe",
+        "address": "Avenue du Parc 1",
+        "city": "Genappe",
+        "capacity": 1000,
+        "surface": "artificial turf",
+        "image": "https://media.api-sports.io/football/venues/4455.png"
+      }
+    },
+    {
+      "team": {
+        "id": 8503,
+        "name": "Napredak Donji Šepak",
+        "code": null,
+        "country": "Bosnia",
+        "founded": 1971,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/8503.png"
+      },
+      "venue": {
+        "id": 6059,
+        "name": "Stadion FK Napredak",
+        "address": null,
+        "city": "Donji Šepak",
+        "capacity": 1000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/6059.png"
+      }
+    },
+    {
+      "team": {
+        "id": 8840,
+        "name": "Knaphill",
+        "code": null,
+        "country": "England",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/8840.png"
+      },
+      "venue": {
+        "id": 11776,
+        "name": "Redding Way",
+        "address": null,
+        "city": "Knaphill, Surrey",
+        "capacity": 1000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/11776.png"
+      }
+    },
+    {
+      "team": {
+        "id": 10022,
+        "name": "Penapolense",
+        "code": "PEN",
+        "country": "Brazil",
+        "founded": 1944,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/10022.png"
+      },
+      "venue": {
+        "id": 7059,
+        "name": "Estádio Municipal Tenente Carriço",
+        "address": "Avenida do Estádio 910",
+        "city": "Penápolis, São Paulo",
+        "capacity": 11914,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/7059.png"
+      }
+    },
+    {
+      "team": {
+        "id": 10070,
+        "name": "Naples United",
+        "code": null,
+        "country": "USA",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/10070.png"
+      },
+      "venue": {
+        "id": 7099,
+        "name": "Lely High School",
+        "address": "1 Lely High School Boulevard",
+        "city": "Naples, Florida",
+        "capacity": 5000,
+        "surface": "artificial turf",
+        "image": "https://media.api-sports.io/football/venues/7099.png"
+      }
+    },
+    {
+      "team": {
+        "id": 13042,
+        "name": "Penapolense U20",
+        "code": null,
+        "country": "Brazil",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/13042.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 13127,
+        "name": "Grêmio Anápolis",
+        "code": "GRE",
+        "country": "Brazil",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/13127.png"
+      },
+      "venue": {
+        "id": 5655,
+        "name": "Estádio Municipal Jonas Duarte",
+        "address": "Avenida Brasil Sul",
+        "city": "Anápolis, Goiás",
+        "capacity": 17800,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/5655.png"
+      }
+    },
+    {
+      "team": {
+        "id": 14432,
+        "name": "Napoli W",
+        "code": null,
+        "country": "Italy",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/14432.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 15148,
+        "name": "Naprijed Hreljin",
+        "code": null,
+        "country": "Croatia",
+        "founded": 1922,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/15148.png"
+      },
+      "venue": {
+        "id": 10861,
+        "name": "Igralište Lonja",
+        "address": null,
+        "city": "Hreljin",
+        "capacity": 1000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/10861.png"
+      }
+    },
+    {
+      "team": {
+        "id": 16499,
+        "name": "Napoli W",
+        "code": null,
+        "country": "Brazil",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/16499.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 17071,
+        "name": "Napa Valley 1839",
+        "code": null,
+        "country": "USA",
+        "founded": 2016,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/17071.png"
+      },
+      "venue": {
+        "id": 12027,
+        "name": "Dodd Stadium",
+        "address": "4026 Maher Street",
+        "city": "Napa, California",
+        "capacity": 2000,
+        "surface": "artificial turf",
+        "image": "https://media.api-sports.io/football/venues/12027.png"
+      }
+    },
+    {
+      "team": {
+        "id": 20338,
+        "name": "Universitario UNAP",
+        "code": null,
+        "country": "Peru",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/20338.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 20642,
+        "name": "Napier City Rovers",
+        "code": null,
+        "country": "New-Zealand",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/20642.png"
+      },
+      "venue": {
+        "id": 1163,
+        "name": "Bluewater Stadium (Park Island)",
+        "address": "Clyde Jeffery Drive, Park Island",
+        "city": "Napier",
+        "capacity": 4000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1163.png"
+      }
+    },
+    {
+      "team": {
+        "id": 22979,
+        "name": "Heinäpään Hanhet 24",
+        "code": null,
+        "country": "Finland",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/22979.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 23882,
+        "name": "Napa Valley 1839 W",
+        "code": null,
+        "country": "USA",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/23882.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 23971,
+        "name": "Annapolis Blues",
+        "code": null,
+        "country": "USA",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/23971.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 24620,
+        "name": "Napredak Markovac",
+        "code": null,
+        "country": "Serbia",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/24620.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 25485,
+        "name": "Naples",
+        "code": null,
+        "country": "USA",
+        "founded": 2024,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/25485.png"
+      },
+      "venue": {
+        "id": 21623,
+        "name": "Paradise Coast Sports Complex",
+        "address": null,
+        "city": "Naples, Florida",
+        "capacity": 4618,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/21623.png"
+      }
+    },
+    {
+      "team": {
+        "id": 25730,
+        "name": "Gremio Anapolis U20",
+        "code": null,
+        "country": "Brazil",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/25730.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 25858,
+        "name": "Annapolis Blues W",
+        "code": null,
+        "country": "USA",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/25858.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 26184,
+        "name": "Naprzód",
+        "code": null,
+        "country": "Poland",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/26184.png"
+      },
+      "venue": {
+        "id": 21914,
+        "name": "Stadion Naprzód",
+        "address": "Sportowa 1",
+        "city": "Jędrzejów",
+        "capacity": 3000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/21914.png"
+      }
+    },
+    {
+      "team": {
+        "id": 26436,
+        "name": "Napoli U20",
+        "code": null,
+        "country": "Italy",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/26436.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 26692,
+        "name": "Napoles",
+        "code": null,
+        "country": "Belize",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/26692.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 26987,
+        "name": "ŠD Napredak Matići",
+        "code": null,
+        "country": "Bosnia",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/26987.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 27626,
+        "name": "Anapolis U20",
+        "code": null,
+        "country": "Brazil",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/27626.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    },
+    {
+      "team": {
+        "id": 27781,
+        "name": "Yanapuma W",
+        "code": null,
+        "country": "Peru",
+        "founded": null,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/27781.png"
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "address": null,
+        "city": null,
+        "capacity": null,
+        "surface": null,
+        "image": null
+      }
+    }
+  ]
+}
