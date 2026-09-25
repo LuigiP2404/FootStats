@@ -112,7 +112,3 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
 }
-
-.top-sidebar {
-  top: 76px;
-}
