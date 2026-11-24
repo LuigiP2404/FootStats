@@ -2,20 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { FixtureInfo, League } from "@/types/football";
 import { getTimeFromTimestamp } from "@/lib/date";
+import { isFinished, isLive, isNotPlayed } from "@/lib/match-status";
 
 type Props = {
     league: League;
     matches: FixtureInfo[];
 };
-
-// API-Football short status codes, grouped by how a row should render them.
-const LIVE_STATUSES = new Set(["1H", "HT", "2H", "ET", "BT", "P", "SUSP", "INT", "LIVE"]);
-const FINISHED_STATUSES = new Set(["FT", "AET", "PEN"]);
-const NOT_PLAYED_STATUSES = new Set(["PST", "CANC", "ABD", "AWD", "WO"]);
-
-const isLive = (status: string) => LIVE_STATUSES.has(status);
-const isFinished = (status: string) => FINISHED_STATUSES.has(status);
-const isNotPlayed = (status: string) => NOT_PLAYED_STATUSES.has(status);
 
 function MatchStatus({ match }: { match: FixtureInfo }) {
     const { status, timestamp } = match.fixture;

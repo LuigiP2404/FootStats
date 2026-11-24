@@ -1,4 +1,5 @@
-import { fetchTeams, hasApiErrors } from "@/lib/utils";
+import { fetchTeams } from "@/lib/utils";
+import { hasApiErrors } from "@/lib/client-utils";
 import { NextRequest } from "next/server";
 
 const MIN_CHARS = 3;

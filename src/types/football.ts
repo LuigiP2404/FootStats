@@ -110,3 +110,13 @@ interface VenueType {
     surface: string,
     image: string
 }
+
+export type LiveFixture = {
+    goals: {
+        home: number | null,
+        away: number | null,
+    }
+    minute: number | null,
+    long: string,
+    short: string,
+}
