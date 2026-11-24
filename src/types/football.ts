@@ -85,3 +85,28 @@ export interface LeagueGroup {
     league: League,
     matches: FixtureInfo[]
 }
+
+export interface TeamResponse {
+    team: TeamType,
+    venue: VenueType
+}
+
+interface TeamType {
+    id: number,
+    name: string,
+    code: string,
+    country: string,
+    founded: number,
+    national: boolean,
+    logo: string
+}
+
+interface VenueType {
+    id: number,
+    name: string,
+    address: string,
+    city: string,
+    capacity: number,
+    surface: string,
+    image: string
+}
