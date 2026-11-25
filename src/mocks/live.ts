@@ -1,6 +1,7 @@
 import "server-only";
 import type { ApiResponse, FixtureInfo } from "@/types/football";
 import data from "@/mocks/fixtures.raw.json";
+import { seededRandom } from "@/lib/random";
 
 // Simulates a live match on top of a real fixture from fixtures.raw.json.
 // Stateless on purpose: the match clock is derived from Date.now(), so every request
@@ -16,17 +17,6 @@ const SECOND_HALF_END = HALFTIME_END + 45;
 const CYCLE = SECOND_HALF_END + 20; // 20s of "Match Finished" before kick-off again
 
 type Goal = { minute: number; side: "home" | "away" };
-
-// Tiny seeded PRNG (mulberry32): the same fixture id always produces the same goals.
-function seededRandom(seed: number) {
-    let a = seed;
-    return () => {
-        a = (a + 0x6d2b79f5) | 0;
-        let t = Math.imul(a ^ (a >>> 15), 1 | a);
-        t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-    };
-}
 
 function goalsFor(fixtureId: number): Goal[] {
     const random = seededRandom(fixtureId);

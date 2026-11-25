@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: "FootStats, Live FootBall stats, Teams/Leagues/Matches stats.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="en"

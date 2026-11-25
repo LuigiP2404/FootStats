@@ -111,6 +111,47 @@ interface VenueType {
     image: string
 }
 
+// Same position labels API-Football uses in /players.
+export type PlayerPosition = 'Goalkeeper' | 'Defender' | 'Midfielder' | 'Attacker';
+
+// App-side shape (flattened), not the raw API envelope.
+export interface Player {
+    id: number,
+    name: string,
+    age: number,
+    nationality: string,
+    position: PlayerPosition,
+    shirtNumber: number,
+    team: {
+        id: number,
+        name: string
+    },
+    season: {
+        appearances: number,
+        goals: number,
+        assists: number,
+        rating: number
+    }
+}
+
+export type TransferType = 'Transfer' | 'Loan' | 'Free';
+
+export interface PlayerTransfer {
+    // ISO date, e.g. "2023-07-01"
+    date: string,
+    type: TransferType,
+    from: { id: number, name: string },
+    to: { id: number, name: string }
+}
+
+export interface PlayerTrophy {
+    competition: string,
+    country: string,
+    // e.g. "2022/2023"
+    season: string,
+    place: 'Winner' | 'Runner-up'
+}
+
 export type LiveFixture = {
     goals: {
         home: number | null,

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "npx tsc --noEmit",
+    "typecheck": "npx tsc --noEmit && eslint",
     "fixtures": "node --env-file=.env.local scripts/capture.mjs"
   },
   "dependencies": {
