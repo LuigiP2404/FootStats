@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FixtureInfo, League } from "@/types/football";
 import { getTimeFromTimestamp } from "@/lib/date";
 import { isFinished, isLive, isNotPlayed } from "@/lib/match-status";
+import FavoriteStar from "./FavoriteStar";
 
 type Props = {
     league: League;
@@ -82,7 +83,8 @@ export default function LeagueBox({ league, matches }: Props) {
                 {matches.map((match) => {
                     const { fixture, teams } = match;
                     return (
-                        <li key={fixture.id} className="flex items-center hover:bg-subtle">
+                        <li key={fixture.id} className="flex items-center px-1 hover:bg-subtle">
+                            <FavoriteStar team={teams.home} />
                             <Link
                                 href={`/match/${fixture.id}`}
                                 className="flex-1 min-w-0 grid grid-cols-[3.5rem_1fr_4rem_1fr] items-center gap-3 px-5 py-3
@@ -108,8 +110,7 @@ export default function LeagueBox({ league, matches }: Props) {
                                     </span>
                                 </span>
                             </Link>
-                            {/* Favorite toggle goes here, as a sibling of the Link (client component). */}
-                            <span className="w-10 shrink-0" aria-hidden="true" />
+                            <FavoriteStar team={teams.away} />
                         </li>
                     );
                 })}

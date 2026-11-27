@@ -1,3 +1,5 @@
+import { FavoriteTeam, Team } from "@/types/football";
+
 const hasApiErrors = (errors: unknown): boolean => {
     return !(errors && typeof errors === 'object' && Object.keys(errors).length === 0);
 }
@@ -10,5 +12,10 @@ const dataIsObject = (data: unknown): data is Record<string, unknown> => {
     return (typeof data === 'object' && data !== null)
 }
 
-export { hasApiErrors, dataIsObject }
+const toFavoriteTeam = (team: Team): FavoriteTeam => {
+    const { id, name, logo } = team;
+    return { id, name, logo };
+}
+
+export { hasApiErrors, dataIsObject, toFavoriteTeam }
 export type { ParseUnion }

@@ -111,12 +111,12 @@ Da saper spiegare: perché ISR e non SSR per questa pagina, cosa succede durante
 Scelta (opzione C): i preferiti sono stato client per utente, quindi Redux + localStorage come da CLAUDE.md. Le Server Actions si esercitano a parte, su un caso in cui una mutazione sul server ha senso. Con preferiti su cookie + Server Action, le pagine squadra che leggono `cookies()` diventerebbero dinamiche e perderebbero l'ISR.
 
 ### 4a – Store Redux e preferiti
-- [ ] [A MANO] Store con `configureStore` creato per richiesta (`makeStore`), non un singleton globale: sul server più utenti condividerebbero lo stesso store.
-- [ ] [A MANO] `StoreProvider` come Client Component, montato nel layout, che crea lo store una sola volta (`useRef`).
-- [ ] [A MANO] Hook tipizzati `useAppDispatch` / `useAppSelector` (tipi `RootState` e `AppDispatch` ricavati dallo store).
-- [ ] [A MANO] `favoritesSlice`: aggiungi / rimuovi / toggle. Nello stato salvi i dati minimi per mostrare la squadra (id, nome, logo), non i dati dell'API.
-- [ ] [A MANO] Sync con localStorage: lettura solo dopo il mount (evitando l'hydration mismatch) e scrittura a ogni cambiamento.
-- [ ] [A MANO] Pulsante stella come piccolo Client Component dentro una pagina server: `'use client'` il più in basso possibile (spostato dal Giorno 3). Dove: righe partite della home (c'è già il segnaposto) e/o pagina squadra.
+- [x] [A MANO] Store con `configureStore` creato per richiesta (`makeStore`), non un singleton globale: sul server più utenti condividerebbero lo stesso store.
+- [x] [A MANO] `StoreProvider` come Client Component, montato nel layout, che crea lo store una sola volta (`lazy useState`).
+- [x] [A MANO] Hook tipizzati `useAppDispatch` / `useAppSelector` (tipi `RootState` e `AppDispatch` ricavati dallo store).
+- [x] [A MANO] `favoritesSlice`: aggiungi / rimuovi / toggle. Nello stato salvi i dati minimi per mostrare la squadra (id, nome, logo), non i dati dell'API.
+- [x] [A MANO] Sync con localStorage: lettura solo dopo il mount (evitando l'hydration mismatch) e scrittura a ogni cambiamento.
+- [x] [A MANO] Pulsante stella come piccolo Client Component dentro una pagina server: `'use client'` il più in basso possibile (spostato dal Giorno 3). Dove: righe partite della home (c'è già il segnaposto) e/o pagina squadra.
 - [ ] [A MANO] Sezione "Preferiti" della sidebar e pagina `/favorites` che leggono dallo store.
 - [ ] [CLAUDE] Stile del pulsante, della sidebar e di `/favorites`.
 

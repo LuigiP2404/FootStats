@@ -57,12 +57,14 @@ interface Teams {
     away: Team
 }
 
-interface Team {
+export interface Team {
     id: number,
     name: string,
     logo: string | null,
     winner: boolean | null
 }
+
+export type FavoriteTeam = Pick<Team, "id" | "name" | "logo">
 
 export interface Goals {
     home: number | null,

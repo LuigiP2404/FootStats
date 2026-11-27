@@ -3,6 +3,7 @@ import "./globals.css";
 import { display, sans } from "./fonts";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import StoreProvider from "@/components/StoreProvider";
 
 const readThemeScript = `
   try {
@@ -31,11 +32,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: readThemeScript }} />
       </head>
       <body className="min-h-full flex flex-col">
-        <Header />
-        <div className="flex">
-          <Sidebar />
-          {children}
-        </div>
+        <StoreProvider>
+          <Header />
+          <div className="flex">
+            <Sidebar />
+            {children}
+          </div>
+        </StoreProvider>
       </body>
     </html>
   );
