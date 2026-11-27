@@ -1,3 +1,4 @@
+import SidebarFavorites from "./SidebarFavorites";
 import SidebarLink from "./ui/SidebarLink";
 
 const LEAGUE_LOGO = "https://media.api-sports.io/football/leagues/2.png";
@@ -22,10 +23,7 @@ export default function Sidebar() {
                 <h2 id="sidebar-favorites" className="px-2 mb-2 text-xs font-semibold uppercase tracking-wider text-ink-3">
                     Favorites
                 </h2>
-                <ul className="flex flex-col gap-0.5">
-                    <li><SidebarLink href="#" text="Napoli" image={LEAGUE_LOGO} /></li>
-                    <li><SidebarLink href="#" text="Inter" image={LEAGUE_LOGO} /></li>
-                </ul>
+                <SidebarFavorites />
             </nav>
         </aside>
     )

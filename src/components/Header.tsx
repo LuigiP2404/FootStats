@@ -13,7 +13,7 @@ export default function Header() {
             <div className="flex flex-1 gap-2.5">
                 <HeaderLink text="Matches" href="#" />
                 <HeaderLink text="Competitions" href="#" />
-                <HeaderLink text="Favorites" href="#" />
+                <HeaderLink text="Favorites" href="/favorites" />
                 <HeaderLink text="Compare" href="#" />
             </div>
             <div className="flex gap-10">

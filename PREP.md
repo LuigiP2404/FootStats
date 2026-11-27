@@ -117,8 +117,8 @@ Scelta (opzione C): i preferiti sono stato client per utente, quindi Redux + loc
 - [x] [A MANO] `favoritesSlice`: aggiungi / rimuovi / toggle. Nello stato salvi i dati minimi per mostrare la squadra (id, nome, logo), non i dati dell'API.
 - [x] [A MANO] Sync con localStorage: lettura solo dopo il mount (evitando l'hydration mismatch) e scrittura a ogni cambiamento.
 - [x] [A MANO] Pulsante stella come piccolo Client Component dentro una pagina server: `'use client'` il più in basso possibile (spostato dal Giorno 3). Dove: righe partite della home (c'è già il segnaposto) e/o pagina squadra.
-- [ ] [A MANO] Sezione "Preferiti" della sidebar e pagina `/favorites` che leggono dallo store.
-- [ ] [CLAUDE] Stile del pulsante, della sidebar e di `/favorites`.
+- [x] [A MANO] Sezione "Preferiti" della sidebar e pagina `/favorites` che leggono dallo store.
+- [x] [CLAUDE] Stile del pulsante, della sidebar e di `/favorites`.
 
 ### 4b – Server Action (esercizio separato)
 - [ ] [A MANO] Una Server Action con `"use server"`, input validato con Zod (gli argomenti arrivano dal client, quindi non sono affidabili).
@@ -127,9 +127,9 @@ Scelta (opzione C): i preferiti sono stato client per utente, quindi Redux + loc
 - Caso d'uso da decidere. Candidato: pulsante "Refresh data" sul profilo giocatore che forza la rigenerazione ISR della pagina (`revalidatePath` on-demand), visibile solo in dev, perché in produzione chiunque potrebbe consumare la quota.
 
 ### 4c – Layout CSS
-- [ ] [A MANO] Griglia di card su `/favorites` con Grid `repeat(auto-fill, minmax(250px, 1fr))`, senza media query.
-- [ ] [A MANO] La card della squadra preferita cambia layout con una container query (orizzontale se larga, verticale se stretta).
-- [ ] [CLAUDE] Rifinitura dello stile e responsive.
+- [x] [A MANO] Griglia di card su `/favorites` con Grid `repeat(auto-fill, minmax(250px, 1fr))`, senza media query.
+- [x] [A MANO] La card della squadra preferita cambia layout con una container query (orizzontale se larga, verticale se stretta).
+- [x] [CLAUDE] Rifinitura dello stile e responsive.
 
 Da saper spiegare: perché lo store va creato per richiesta in Next, perché leggere localStorage durante il render causa un hydration mismatch, quando Redux e quando stato locale o server, differenza tra Server Action e Route Handler, `auto-fill` vs `auto-fit`, container query vs media query.
 

@@ -4,6 +4,7 @@ import { FixtureInfo, League } from "@/types/football";
 import { getTimeFromTimestamp } from "@/lib/date";
 import { isFinished, isLive, isNotPlayed } from "@/lib/match-status";
 import FavoriteStar from "./FavoriteStar";
+import TeamLogo from "./TeamLogo";
 
 type Props = {
     league: League;
@@ -47,13 +48,6 @@ function MatchScore({ match }: { match: FixtureInfo }) {
 // winner is null until the match is decided (and on a draw).
 const teamNameStyle = (winner: boolean | null) =>
     winner === true ? "font-bold text-ink" : winner === false ? "font-medium text-ink-2" : "font-medium text-ink";
-
-function TeamLogo({ src }: { src: string | null }) {
-    // Decorative: the team name is always rendered next to it.
-    return src
-        ? <Image src={src} alt="" width={20} height={20} className="shrink-0 object-contain" />
-        : <span className="shrink-0 w-5 h-5 rounded-chip bg-field" aria-hidden="true" />;
-}
 
 export default function LeagueBox({ league, matches }: Props) {
     return (

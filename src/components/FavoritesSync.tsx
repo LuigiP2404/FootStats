@@ -1,22 +1,23 @@
 "use client"
-import { lsFieldName, setFavorites } from "@/lib/favoritesSlice";
+import { lsFieldName, selectFavorites, selectFavoritesHydrated, setFavorites } from "@/lib/favoritesSlice";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { isValidFavoriteTeams } from "@/lib/validation";
-import { useEffect, useState } from "react";
+import type { FavoriteTeam } from "@/types/football";
+import { useEffect } from "react";
 
 export default function FavoritesSync() {
     const dispatch = useAppDispatch();
-    const favorites = useAppSelector((state) => state.favorites);
-    const [hydrated, setHydrated] = useState<boolean>(false);
+    const favorites = useAppSelector(selectFavorites);
+    const hydrated = useAppSelector(selectFavoritesHydrated);
+    
     useEffect(() => {
+        let favoritesArr: FavoriteTeam[] = [];
         try {
-            // eslint-disable-next-line react-hooks/set-state-in-effect -- TODO: switch to getState()
-            setHydrated(true);
             const favoriteTeamsLS = localStorage.getItem(lsFieldName);
             if (favoriteTeamsLS) {
-                const favoriteTeams = JSON.parse(favoriteTeamsLS);
-                if (isValidFavoriteTeams(favoriteTeams)) {
-                    dispatch(setFavorites(favoriteTeams));
+                const favoritesParsed = JSON.parse(favoriteTeamsLS);
+                if (isValidFavoriteTeams(favoritesParsed)) {
+                    favoritesArr = favoritesParsed;
                 } else {
                     console.error("The user's favorite teams data has a wrong format");
                     localStorage.removeItem(lsFieldName);
@@ -25,6 +26,7 @@ export default function FavoritesSync() {
         } catch {
             console.error("There was an error fetching the user's favorite teams");
         }
+        dispatch(setFavorites(favoritesArr));
     }, [dispatch]);
 
     useEffect(() => {

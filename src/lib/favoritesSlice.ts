@@ -1,7 +1,16 @@
 import type { FavoriteTeam } from "@/types/football";
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "./store";
 
-const initialState: FavoriteTeam[] = [];
+type StoreFavorites = {
+    items: FavoriteTeam[],
+    hydrated: boolean
+}
+
+const initialState: StoreFavorites = {
+    items: [],
+    hydrated: false
+};
 
 export const lsFieldName = 'favoriteItems';
 
@@ -10,25 +19,31 @@ export const favoritesSlice = createSlice({
     initialState,
     reducers: {
         addFavorite: (state, action: PayloadAction<FavoriteTeam>) => {
-            if (!state.some((x) => x.id === action.payload.id)) {
-                state.push(action.payload)
+            if (!state.items.some((x) => x.id === action.payload.id)) {
+                state.items.push(action.payload)
             }
         },
         removeFavorite: (state, action: PayloadAction<number>) => {
-            return state.filter((x) => x.id !== action.payload)
+            state.items = state.items.filter((x) => x.id !== action.payload)
         },
         toggleFavorite: (state, action: PayloadAction<FavoriteTeam>) => {
-            if (!state.some((x) => x.id === action.payload.id)) {
-                state.push(action.payload);
+            if (!state.items.some((x) => x.id === action.payload.id)) {
+                state.items.push(action.payload);
             } else {
-                return state.filter((x) => x.id !== action.payload.id)
+                state.items = state.items.filter((x) => x.id !== action.payload.id)
             }
         },
         setFavorites: (state, action: PayloadAction<FavoriteTeam[]>) => {
-            return action.payload;
+            return {
+                hydrated: true,
+                items: action.payload
+            }
         }
     }
 })
+
+export const selectFavorites = (state: RootState) => state.favorites.items;
+export const selectFavoritesHydrated = (state: RootState) => state.favorites.hydrated;
 
 export default favoritesSlice.reducer;
 export const { addFavorite, removeFavorite, toggleFavorite, setFavorites } = favoritesSlice.actions

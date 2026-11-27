@@ -1,14 +1,14 @@
 "use client"
 
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
-import type { Team } from "@/types/football"
-import { toggleFavorite } from "@/lib/favoritesSlice";
+import type { FavoriteTeam } from "@/types/football"
+import { selectFavorites, toggleFavorite } from "@/lib/favoritesSlice";
 import { Star } from "lucide-react";
 import { toFavoriteTeam } from "@/lib/client-utils";
 
-export default function FavoriteStar({ team }: { team: Team }) {
+export default function FavoriteStar({ team }: { team: FavoriteTeam }) {
     const dispatch = useAppDispatch();
-    const isFavorite = useAppSelector((state) => state.favorites.some((x) => x.id === team.id));
+    const isFavorite = useAppSelector((state) => selectFavorites(state).some((x) => x.id === team.id));
 
     return (
         <button
