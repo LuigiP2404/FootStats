@@ -121,9 +121,9 @@ Scelta (opzione C): i preferiti sono stato client per utente, quindi Redux + loc
 - [x] [CLAUDE] Stile del pulsante, della sidebar e di `/favorites`.
 
 ### 4b – Server Action (esercizio separato)
-- [ ] [A MANO] Una Server Action con `"use server"`, input validato con Zod (gli argomenti arrivano dal client, quindi non sono affidabili).
-- [ ] [A MANO] Form o pulsante client con stato di attesa (`useActionState` o `useTransition`) e gestione dell'errore.
-- [ ] [A MANO] `revalidatePath` o `revalidateTag` dopo la mutazione.
+- [x] [A MANO] Una Server Action con `"use server"`, input validato con Zod (gli argomenti arrivano dal client, quindi non sono affidabili).
+- [x] [A MANO] Form o pulsante client con stato di attesa (`useActionState` o `useTransition`) e gestione dell'errore.
+- [x] [A MANO] `revalidatePath` o `revalidateTag` dopo la mutazione.
 - Caso d'uso da decidere. Candidato: pulsante "Refresh data" sul profilo giocatore che forza la rigenerazione ISR della pagina (`revalidatePath` on-demand), visibile solo in dev, perché in produzione chiunque potrebbe consumare la quota.
 
 ### 4c – Layout CSS

@@ -4,7 +4,6 @@ const hasApiErrors = (errors: unknown): boolean => {
     return !(errors && typeof errors === 'object' && Object.keys(errors).length === 0);
 }
 
-
 type ParseUnion<T> = 
 | { ok: true, data: T }
 | { ok: false, error: string}

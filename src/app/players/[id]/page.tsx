@@ -8,6 +8,7 @@ import { ProfileCardSkeleton } from "./_components/ProfileCard";
 import { Suspense } from "react";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
+import RefreshPlayerButton from "./_components/RefreshPlayerButton";
 
 export const revalidate = 86400; // 1d
 export const dynamicParams = true;
@@ -37,11 +38,13 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
     const normalizedId = Number(id);
+    const showRefreshButton = process.env.ENABLE_DEV_TOOLS === 'true';
 
     if (!isPositiveInteger(normalizedId)) notFound();
 
     const playerData = await getPlayer(normalizedId);
     if (!playerData) notFound();
+    const fetchTime = new Date().toLocaleTimeString("en-GB");
 
 
     const { name, age, nationality, position, shirtNumber, team, season } = playerData;
@@ -105,6 +108,21 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                     <PlayerTrophies playerId={normalizedId} />
                 </Suspense>
             </div>
+
+            {/* Debug strip, server-gated by ENABLE_DEV_TOOLS: the timestamp only changes when the page is regenerated. */}
+            {showRefreshButton ? (
+                <aside
+                    aria-label="Developer tools"
+                    className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-6 px-4 py-3
+                    border border-dashed border-line rounded-card bg-subtle"
+                >
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-ink-3">Dev tools</span>
+                    <span className="text-[13px] text-ink-2">
+                        Generated at <span className="font-semibold text-ink tabular-nums">{fetchTime}</span>
+                    </span>
+                    <RefreshPlayerButton playerId={normalizedId} />
+                </aside>
+            ) : null}
         </main>
     )
 }
